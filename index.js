@@ -2,10 +2,14 @@ import express from 'express'
 
 const app = express()
 
-app.get('/',(req, res) => {
-    res.send('hello World')
+app.get('/', (req, res) => {
+    res.send('Subiu')
+})
+
+app.get('/oi', (req, res) => {
+    res.send('Olá, Mundo!')
 })
 
 app.listen(3000, () => {
-    console.log('Server is runnung on http://localhost:3000')
+   console.log('Server is running on http://localhost:3000')
 })
